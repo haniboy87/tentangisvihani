@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang isvihani</title>
     <style>
+        /* Menambahkan aturan untuk membuat tabel responsif */
+table {
+    width: 100%;  /* Mengatur lebar tabel agar mengikuti lebar layar */
+    margin: 0 auto;
+    border-collapse: collapse;
+    overflow-x: auto;  /* Memungkinkan scrolling horizontal */
+    display: block;  /* Mengubah tabel menjadi block-level element */
+    -webkit-overflow-scrolling: touch; /* Untuk smooth scrolling pada perangkat mobile */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Menambahkan media query untuk tampilan ponsel */
+@media only screen and (max-width: 768px) {
+    table {
+        font-size: 12px;  /* Mengurangi ukuran font untuk perangkat kecil */
+    }
+}
+
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #27445D;
